@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.down-change {
+    color: red;
+}
+
+.up-change {
+    color:green;
+}

@@ -1,0 +1,355 @@
+<html>
+    <head>
+        <title>Simple chat</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="info.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+      
+
+        <div id="root" class="container">
+
+        <div id="chartdiv"></div>
+
+            <div class="row">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Pair</th>
+                                <th scope="col">Last Price</th>
+                                <th scope="col">24 Change</th>
+                                <th scope="col">24 High</th>
+                                <th scope="col">24 Low</th>
+                                <th scope="col">Market Cap</th>
+                                <th scope="col">24 volume</th>
+                            </tr>
+                        </thead>
+
+                            
+                            <tr class="btc"></tr>
+            
+                            <tr class="eth"></tr>
+            
+                            <tr class="ren"></tr>
+            
+                            <tr class="trx"></tr>
+            
+                            <tr class="ltc"></tr>
+            
+                            <tr class="link"></tr>
+            
+                            <tr class="xrp"></tr>
+            
+                            <tr class="dusk"></tr>
+            
+                            <tr class="rvn"></tr>
+            
+                            <tr class="ankr"></tr>
+            
+                            <tr class="eos"></tr>
+            
+                            <tr class="bchabc"></tr>
+            
+                            <tr class="ada"></tr>
+            
+                            <tr class="nano"></tr>
+                            
+                            <tr class="neo"></tr>
+            
+                            <tr class="erd"></tr>
+            
+                            <tr class="waves"></tr>
+            
+                            <tr class="kmd"></tr>
+            
+                            <tr class="wtc"></tr>
+            
+                            <tr class="sky"></tr>
+            
+                            <tr class="xmr"></tr>
+            
+                            <tr class="xlm"></tr>
+            
+                            <tr class="npxs"></tr>
+            
+                            <tr class="atom"></tr>
+            
+                            <tr class="adx"></tr>
+            
+                            <tr class="qtum"></tr>
+            
+                            <tr class="one"></tr>
+            
+                            <tr class="bat"></tr>
+            
+                            <tr class="iota"></tr>
+            
+                            <tr class="theta"></tr>
+            
+                            <tr class="icx"></tr>
+            
+                            <tr class="algo"></tr>
+            
+                            <tr class="sngls"></tr>
+            
+                            <tr class="qkc"></tr>
+            
+                            <tr class="zil"></tr>
+            
+                            <tr class="oax"></tr>
+            
+                            <tr class="ont"></tr>
+            
+                            <tr class="lsk"></tr>
+            
+                            <tr class="ftm"></tr>
+            
+                            <tr class="hot"></tr>
+            
+                            <tr class="btt"></tr>
+            
+                            <tr class="agi"></tr>
+            
+                            <tr class="zec"></tr>
+            
+                            <tr class="dent"></tr>
+            
+                            <tr class="vet"></tr>
+            
+                            <tr class="celr"></tr>
+            
+                            <tr class="mtl"></tr>
+            
+                            <tr class="ark"></tr>
+            
+                            <tr class="enj"></tr>
+            
+                              <!--  -->
+                            <tr class="mana"></tr>
+            
+                            <tr class="snt"></tr>
+            
+                            <tr class="tnt"></tr>
+            
+                            <tr class="bqx"></tr>
+              
+                            <tr class="fet"></tr>
+            
+                            <tr class="etc"></tr>
+              
+                            <tr class="btg"></tr>
+              
+                            <tr class="grs"></tr>
+              
+                            <tr class="tfuel"></tr>
+            
+                            <tr class="elf"></tr>
+            
+                            <tr class="matic"></tr>
+              
+                            <tr class="hc"></tr>
+              
+                            <tr class="dash"></tr>
+              
+                            <tr class="mith"></tr>
+              
+                            <tr class="omg"></tr>
+              
+                            <tr class="ardr"></tr>
+            
+                            <tr class="storj"></tr>
+              
+                            <tr class="arn"></tr>
+            
+                            
+            
+                            <tr class="mft"></tr>
+            
+                            <tr class="dlt"></tr>
+            
+                            <tr class="zrx"></tr>
+            
+                            <tr class="cmt"></tr>
+            
+                            <tr class="ost"></tr>
+            
+                            <tr class="mco"></tr>
+            
+                            <tr class="poe"></tr>
+            
+                            <tr class="dock"></tr>
+            
+                            <tr class="loom"></tr>
+            
+                            <tr class="iost"></tr>
+            
+                            <tr class="knc"></tr>
+            
+                            <tr class="cdt"></tr>
+            
+            
+            
+                            <tr class="gto"></tr>
+            
+                            <tr class="ast"></tr>
+            
+                            <tr class="amb"></tr>
+            
+                            <tr class="gvt"></tr>
+            
+                            <tr class="nth"></tr>
+            
+                            <tr class="xvg"></tr>
+            
+                            <tr class="vib"></tr>
+            
+                            <tr class="mda"></tr>
+            
+                            <tr class="gxc"></tr>
+            
+                            <tr class="iotx"></tr>
+            
+                            <tr class="nuls"></tr>
+            
+                            <tr class="cvc"></tr>
+            
+            
+            
+                            <tr class="qlc"></tr>
+            
+                            <tr class="strat"></tr>
+            
+                            <tr class="vibe"></tr>
+            
+                            <tr class="doge"></tr>
+            
+                            <tr class="ppt"></tr>
+            
+                            <tr class="evx"></tr>
+            
+                            <tr class="lrc"></tr>
+            
+                            <tr class="wan"></tr>
+            
+                            <tr class="poly"></tr>
+            
+                            <tr class="poa"></tr>
+            
+                            <tr class="steem"></tr>
+            
+                            <tr class="dcr"></tr>
+            
+                            <tr class="xzc"></tr>
+                              <!--  -->
+            
+                            <tr class="go"></tr>
+            
+                            <tr class="ong"></tr>
+            
+                            <tr class="fuel"></tr>
+            
+                            <tr class="brd"></tr>
+            
+                            <tr class="bcpt"></tr>
+            
+                            <tr class="wabi"></tr>
+            
+                            <tr class="yoyo"></tr>
+            
+                            <tr class="rep"></tr>
+            
+                            <tr class="nas"></tr>
+            
+                            <tr class="powr"></tr>
+            
+                            <tr class="qsp"></tr>
+            
+                            <tr class="gnt"></tr>
+            
+                            <!-- <tr class="nav"></tr> -->
+            
+                            <tr class="gas"></tr>
+            
+                            <tr class="blz"></tr>
+            
+                            <tr class="lun"></tr>
+            
+                            <tr class="eng"></tr>
+            
+                            <tr class="dnt"></tr>
+            
+                            <tr class="snm"></tr>
+            
+                            <tr class="storm"></tr>
+            
+                            <tr class="wrp"></tr>
+            
+                            <tr class="nebl"></tr>
+            
+                            <tr class="sys"></tr>
+            
+                            <tr class="pivx"></tr>
+            
+                            <tr class="rdn"></tr>
+            
+                            <tr class="bts"></tr>
+                            
+                            <tr class="ins"></tr>
+            
+                            <tr class="appc"></tr>
+            
+                            <tr class="zen"></tr>
+            
+                            <tr class="bcd"></tr>
+            
+                            <tr class="req"></tr>
+            
+                            <tr class="rcn"></tr>
+            
+                            <tr class="ncash"></tr>
+            
+                            <tr class="nxs"></tr>
+            
+                            <tr class="data"></tr>
+            
+                            <tr class="dgd"></tr>
+            
+                            <tr class="sc"></tr>
+            
+                            <tr class="key"></tr>
+            
+                            <tr class="fun"></tr>
+            
+                            <tr class="via"></tr>
+            
+                            <tr class="rlc"></tr>
+            
+                            <tr class="tnb"></tr>
+            
+                            <tr class="cnd"></tr>
+            
+                            <tr class="lend"></tr>
+            
+                            <tr class="edo"></tr>
+            
+                            <tr class="bnt"></tr>
+            
+                            <tr class="btcb"></tr>
+            
+            
+                            
+            
+            
+                        </table>
+            </div>
+            
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
